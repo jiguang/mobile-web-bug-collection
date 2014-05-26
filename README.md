@@ -7,7 +7,7 @@
 解决：为 input 设置高度，并设置 line-height: normal;
 
 问题：滑动卡顿
-解决：-webkit-overflow-scrolling: touch;
+解决：-webkit-overflow-scrolling: touch; (iOS only)
 
 问题：Android 下 fixed 定位左右偏移
 解决：同时设置 left:0; right:0;
