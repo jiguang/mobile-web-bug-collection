@@ -41,7 +41,7 @@
 
 **问题：** 去掉 input 首字母大写及联想功能
 
-**解决：** <input autocomplete="off" autocorrect="off" />
+**解决：** &lt;input autocomplete="off" autocorrect="off" /&gt;
 
 **问题：** 让 input 显示“搜索”而不是“换行”
 
