@@ -65,6 +65,8 @@
         outline: none !important;
     }
     
+**问题：** OPPO input:button 或者 button 元素设置了圆角 border-radius 并设置了背景色时无法盖住背景色
 
+**解决：** background-clip: padding-box;
 
 
