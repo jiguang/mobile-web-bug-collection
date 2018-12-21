@@ -7,66 +7,80 @@
 
 **解决：** 为 input 设置高度，并设置 line-height: normal;
 
+&nbsp;
 
 **问题：** 滑动卡顿
 
 **解决：** -webkit-overflow-scrolling: touch; (iOS only)
+
+&nbsp;
 
 
 **问题：** Android 下 fixed 定位左右偏移
 
 **解决：** 同时设置 left:0; right:0;
 
+&nbsp;
 
 **问题：** 呼出 iOS 数字键盘
 
 **解决：** 设置 input 的 type＝"tel"
 
+&nbsp;
 
 **问题：** Android 2.3 max-height 失效
 
 **解决：** 要和 overflow:hidden; 同时使用，需要飘出的元素用 padding 露出
 
+&nbsp;
 
 **问题：** Android 下 transform: translate 的内部绝对定位元素不可点
 
 **解决：** 不用绝对定位或不可点元素添加 transform: translateX(0px)
 
+&nbsp;
 
 **问题：** 取消点击时半透明背景色
 
 **解决：** -webkit-tap-highlight-color: rgba(0,0,0,0)
 
+&nbsp;
 
 **问题：** 使用 -webkit-line-clamp:2; 时正好两行和超出两行渲染高度不同
 
 **解决：** 未知
 
+&nbsp;
 
 **问题：** 禁止 iOS 呼出菜单/保存图片/新窗口打开链接/彻底干掉点击效果
 
 **解决：** -webkit-touch-callout: none;
 
+&nbsp;
 
 **问题：** 去掉 input 首字母大写及联想功能
 
 **解决：** &lt;input autocomplete="off" autocorrect="off" /&gt;
 
+&nbsp;
 
 **问题：** 让 input 显示“搜索”而不是“换行”
 
 **解决：** 1，input 加上 type＝"search"; 2，外层套上 form 标签，同时监听 submit 事件并阻止默认行为
 
+&nbsp;
 
 **问题：** 阻止被特定区域挡住的 DOM 元素响应事件
 
 **解决：** pointer-events: none; 如果该特定区域内部需要响应事件，则将内部元素设置为 pointer-events: auto;
 
+&nbsp;
 
 **问题：** 三星 Note 3 中 text-indent 撑开的 box 使用 overflow:hidden; 挡不住
 
 **解决：** 使用其他方案如 color:rgba(0,0,0,0) 来隐藏文字
 
+&nbsp;
 
 **问题：** Android 下 input focus 高亮外框无法消除
 
@@ -78,11 +92,13 @@
         outline: none !important;
     }
     
+&nbsp;
     
 **问题：** OPPO input:button 或者 button 元素设置了圆角 border-radius 并设置了背景色时无法盖住背景色
 
 **解决：** background-clip: padding-box;
 
+&nbsp;
 
 **问题：** CSS transform 导致 安卓 部分机型有定位的元素不可点击，影响机型：华为，三星部分机型
 
