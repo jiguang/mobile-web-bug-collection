@@ -69,4 +69,8 @@
 
 **解决：** background-clip: padding-box;
 
+**问题：** CSS transform 导致 安卓 部分机型有定位的元素不可点击，影响机型：华为，三星部分机型
+
+**解决：** 换其他方案
+
 
